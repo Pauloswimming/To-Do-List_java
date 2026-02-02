@@ -12,6 +12,8 @@
 ## Preview do Projeto
 ![alt text](image.png)
 
+### Testando o Projeto
+![alt text](image-1.png)
 ---
 
 ## 📋 Guia de Execução
