@@ -9,8 +9,9 @@
 
 ---
 
-![Preview do Projeto]
-(![alt text](image.png))
+## Preview do Projeto
+![alt text](image.png)
+
 ---
 
 ## 📋 Guia de Execução
