@@ -1,0 +1,7 @@
+/* Reset básico para garantir que o site ocupe a tela toda */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}

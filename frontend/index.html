@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerenciador de Tarefas — Minhas Tarefas</title>
+    <meta name="description" content="Projeto To-Do (React + Java). Simples, elegante e prático para estudo/portfólio." />
+
+    <!-- Favicon (substitua /favicon.svg se quiser) -->
+    <link rel="icon" href="/favicon.svg" />
+
+    <!-- Fonte moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Configuração rápida do Tailwind (CDN) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f5f7ff',
+                100: '#eef2ff',
+                400: '#818cf8',
+                500: '#6366f1',
+                600: '#4f46e5'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            },
+            boxShadow: {
+              'soft-lg': '0 10px 30px rgba(16,24,40,0.08)'
+            },
+            borderRadius: {
+              xl: '1rem'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Pequenas regras CSS locais -->
+    <style>
+      html, body, #root { height: 100%; }
+      .glass {
+        background: rgba(255, 255, 255, 0.66);
+        backdrop-filter: blur(6px);
+      }
+      .btn-fab {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        padding: 0.5rem 0.75rem;
+        box-shadow: 0 6px 18px rgba(79,70,229,0.12);
+        transition: transform .12s ease, box-shadow .12s ease;
+      }
+      .btn-fab:active { transform: translateY(1px) scale(0.995); }
+      /* loader skeleton */
+      .skeleton {
+        background: linear-gradient(90deg, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.02) 50%, rgba(0,0,0,0.04) 100%);
+        background-size: 200% 100%;
+        animation: shimmer 1.2s linear infinite;
+      }
+      @keyframes shimmer { from { background-position: 200% 0 } to { background-position: -200% 0 } }
+    </style>
+  </head>
+
+  <body class="antialiased bg-gradient-to-br from-brand-50 via-white to-indigo-50 min-h-screen text-gray-800">
+    <!-- Root com padding resp. — mantém classes depois que o React monta -->
+    <div id="root" class="min-h-screen flex items-start justify-center py-12 px-6"></div>
+
+    <noscript class="block text-center text-red-600 mt-6">
+      Javascript está desativado — ative para usar o Gerenciador de Tarefas.
+    </noscript>
+
+    <!-- Ponto de entrada do React -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
