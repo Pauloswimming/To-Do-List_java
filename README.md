@@ -9,7 +9,8 @@
 
 ---
 
-![Preview do Projeto](caminho-da-imagem.png)
+![Preview do Projeto]
+(![alt text](image.png))
 ---
 
 ## 📋 Guia de Execução
